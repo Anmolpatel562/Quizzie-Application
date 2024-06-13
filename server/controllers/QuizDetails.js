@@ -171,6 +171,8 @@ const findByQuizIdAndUpdateQna = async (req, res) => {
   }
 };
 
+
+
 const getQuestionArrayByQuizId = async (req, res) => {
   try {
     const { id } = req.params;
