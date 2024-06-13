@@ -1,0 +1,62 @@
+.Container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+
+.wrapper{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.QuizAnalysisText{
+    color: #5076FF;
+    font-size: 40px;
+    font-weight: 600;
+    
+}
+
+.AnalyticsContainer{
+    width: 100%;
+    height: 405px;
+    scroll-behavior:smooth;
+    scrollbar-width: thin;
+}
+
+
+.tableContainer{
+    width: 100%;
+    /* background-color: antiquewhite; */
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.row1{
+    width: 100%;
+    background-color: #5076FF;
+    color: white;
+}
+
+.row1Item{
+    padding: .4rem;
+    
+}
+
+.row1Item1{
+    border-radius: 10px 0 0 10px;
+}
+
+.row1Item4{
+    border-radius: 0 10px 10px 0;
+}

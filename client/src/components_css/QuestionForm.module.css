@@ -1,0 +1,24 @@
+.questionsPanelContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+.questionTextInputField{
+    width: 98%;
+    height: 55px;
+    border:none;
+    box-shadow: rgb(192, 192, 192) 0px 0px 15px -2px;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    padding-left: .7rem;
+    outline: none;
+    color: #474444;
+    font-size: 18px;
+}
+
+.optionTypeContainer{
+    display: flex;
+    justify-content: space-around;
+}

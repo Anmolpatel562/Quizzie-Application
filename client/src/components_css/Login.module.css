@@ -1,0 +1,63 @@
+
+.formDetailsContainer {
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.3rem;
+  width: 500px;
+  height: 180px;
+}
+
+.loadingPanel{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  opacity: 70%;
+}
+
+.fields {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: end;
+  flex-wrap: wrap;
+}
+
+.inputFields::placeholder {
+  color: red;
+  font-size: 12px;
+}
+
+.labelTag {
+  width: 38%;
+  text-align: right;
+}
+
+.inputFields {
+  width: 55%;
+  height: 26px;
+  background-color: #f4f4f4;
+  border: 1px solid #f4f4f4;
+  border-radius: 7px 7px 0px 0px;
+  padding-left: 0.5rem;
+  outline: none;
+}
+
+.loginBtn {
+  width: 200px;
+  background-color: #a9bcff;
+  border-radius: 8px;
+  border: none;
+  height: 28px;
+  font-weight: 600;
+  color: #474444;
+  cursor: pointer;
+}

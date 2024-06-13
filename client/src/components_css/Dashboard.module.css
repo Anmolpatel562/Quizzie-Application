@@ -1,0 +1,54 @@
+.topContainer{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.activitiesDone{
+    height: 38%;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.quizDetails{
+    height: 62%;
+    width: 100%;
+    
+}
+
+.activityBox{
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    height: 115px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.numberDiv{
+    font-size: 45px;
+    width: 60%;
+}
+.span{
+    font-size: 22px;
+}
+.bottomTextActivity{
+    width: 60%;
+    font-size: 22px;
+}
+
+.quizChips{
+    margin-top: .5rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows:90px 90px 90px;
+    grid-gap: 10px;
+}

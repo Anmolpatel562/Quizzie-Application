@@ -1,0 +1,58 @@
+
+.tableContainer{
+    width: 100%;
+    /* background-color: antiquewhite; */
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.row1{
+    width: 100%;
+    background-color: #5076FF;
+    color: white;
+}
+
+.row1Item{
+    padding: .4rem;
+    
+}
+
+.row1Item1{
+    border-radius: 10px 0 0 10px;
+}
+
+.row1Item4{
+    border-radius: 0 10px 10px 0;
+}
+
+
+.row2Item1{
+    border-radius: 10px 0 0 10px;
+}
+.row2Item6{
+    border-radius: 0 10px 10px 0;
+    text-align: left;
+    color: black;
+}
+.questionLink{
+    color: black;
+}
+
+.row2Item{
+    padding: .4rem;
+   
+}
+
+.row3Item{
+    padding: .4rem;
+    
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+}

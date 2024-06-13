@@ -1,0 +1,157 @@
+/*Mobile view css */
+.topContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: #474444;
+}
+
+.innerContainer{
+    height: 90%;
+    width: 85%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.timerQuestionNoContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.timerContainer{
+    color: #D60000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.questionText{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    
+    font-size: 25px;
+}
+
+.optionContainerText{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.optionsText{
+    background-color: #F0F0F0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.optionContainerUrl{
+    width: 90%;
+    height: 50%;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.optionsUrl{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: .5rem;
+}
+
+.imageUrl{
+    height: 100%;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.optionTextForTextAndUrl{
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  color: white;
+}
+
+.textAndUrlOptionContainerUrl{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.textAndUrlOptionContainer{
+    width: 90%;
+    height: 100%;
+   
+}
+
+.textAndOptionsUrl{
+    background-color: #F0F0F0;
+    width: 90%;
+    height: 20%;
+    border-radius: 10px;
+    position: relative;
+    padding: .5rem;
+}
+
+.imageTextAndUrl{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.nextButton{
+    background-color: #60B84B;
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.loadingText{
+    font-size: 45px;
+}
+.loadingGif{
+    width: 40px;
+    height: 30px;
+    padding-top: 1rem;
+}
+
+.loadingContainer{
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
