@@ -1,5 +1,4 @@
 import axios from "axios";
-
 const backendUrl = process.env.REACT_APP_BACKENDURL;
 
 export const userSignUp = async (userDetails) => {
@@ -23,17 +22,3 @@ export const userLogin = async (userDetails) => {
     return error.response.data;
   }
 };
-
-export const isUserValid = async (userId, token) => {
-  try {
-    const response = await axios.post(`${backendUrl}isUserValid`, {
-      userId,
-      token,
-    });
-    return response.data;
-  } catch (error) {
-    console.log(error);
-    return error.response.data;
-  }
-};
-

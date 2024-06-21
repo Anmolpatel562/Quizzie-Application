@@ -1,5 +1,6 @@
-export const convertDateFormate = (inputDate) => {
-  const date = new Date(inputDate);
+export const convertDateFormate = (prevDate) => {
+
+  const date = new Date(prevDate);
 
   const monthNames = [
     "January",

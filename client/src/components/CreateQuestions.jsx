@@ -78,20 +78,17 @@ const CreateQuestions = ({
     setSelectedQuestionIndex(selectedQuestionIndex + 1);
   };
 
-
   const handleClick = (index) => {
     console.log(index);
     setSelectedQuestionIndex(index);
   };
 
   const handleQuestionChange = (index, updatedQuestion) => {
-    const updatedQuestions = questionsArray.map((q, i) =>
-      i === index ? updatedQuestion : q
+    const updatedQuestions = questionsArray.map((question, questionIndex) =>
+      questionIndex === index ? updatedQuestion : question
     );
     setQuestionsArray(updatedQuestions);
   };
-
-
 
   const createQuizHandler = () => {
     const newQuiz = {
@@ -104,6 +101,15 @@ const CreateQuestions = ({
     console.log(newQuiz);
 
     setShowQuizLinkPanel(true);
+  };
+
+  const removeQuestionHandler = (questionNumber) => {
+    const removedQuestionArray = questionsArray.filter((question) => {
+      return question.questionNumber !== questionNumber;
+    });
+    setQuestionsArray(removedQuestionArray);
+    setTotalQuestions(questionNumber);
+    setSelectedQuestionIndex(selectedQuestionIndex - 1);
   };
 
   return (
@@ -127,12 +133,26 @@ const CreateQuestions = ({
               <div className={styles.circleAndAddBtnContainer}>
                 {questionsArray.map((question, index) => {
                   return (
-                    <div
-                      key={index}
-                      className={styles.circle}
-                      onClick={() => handleClick(index)}
-                    >
-                      <div>{question.questionNumber}</div>
+                    <div className={styles.onlyCircleContainer}>
+                      <div
+                        key={index}
+                        className={styles.circle}
+                        onClick={() => handleClick(index)}
+                      >
+                        <div>{question.questionNumber}</div>
+                      </div>
+                      {index === questionsArray.length - 1 && index !== 0? (
+                        <img
+                          className={styles.cross}
+                          src={xSign}
+                          alt=""
+                          onClick={() =>
+                            removeQuestionHandler(question.questionNumber)
+                          }
+                        />
+                      ) : (
+                        <></>
+                      )}
                     </div>
                   );
                 })}
