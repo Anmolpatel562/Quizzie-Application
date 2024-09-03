@@ -108,6 +108,7 @@ export const getQuestionArrayByQuizId = async (id) => {
 export const countNumberOfQuestionCreatedByUserId = async (userId) => {
   try{
     const response = await axios.get(`${backendUrl}countNumberOfQuestionCreatedByUserId/${userId}`);
+    console.log(response.data.result[0].totalQuestions);
     return response.data.result[0].totalQuestions;
   }catch(error){
     console.log(error);

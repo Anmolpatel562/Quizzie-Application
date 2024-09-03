@@ -56,9 +56,9 @@ const Dashboard = ({ dashBoardRender, setAllQuizs }) => {
 
       setShowTotalQuizLoading(false);
 
-      
 
       const questionCount = await countNumberOfQuestionCreatedByUserId(userId)
+      console.log(questionCount)
       setTotalQuestionsCreated(questionCount);
 
       setShowTotalQuestionLoading(false);

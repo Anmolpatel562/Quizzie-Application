@@ -7,8 +7,6 @@ import { useAuth } from './store/Auth';
 
 
 function App() {
-  // const {val} = useAuth();
-  // console.log(val);
   return (
     <div className="App" >
       <BrowserRouter>

@@ -47,15 +47,15 @@ const userlogIn = async (req, res) => {
     const jwtToken = await jwt.sign(
       { userId: user._id },
       process.env.SECRETKEY,
-      {expiresIn:"1h"}
-    )
-   
+      { expiresIn: "1h" }
+    );
+
     res.status(202).json({
       message: "User Logged in Successfully.",
-        data:{
-          token: jwtToken,
-          userId:user._id,
-        }  
+      data: {
+        token: jwtToken,
+        userId: user._id,
+      },
     });
   } catch (error) {
     console.log(error);
@@ -65,38 +65,5 @@ const userlogIn = async (req, res) => {
   }
 };
 
-const isUserValid = async (req,res) => {
-  try{
-    const {userId,token} = req.body;
-    if(!userId){
-      return res.status(400).json({
-        message:"User id is empty !",
-      })
-    }
-    const user = await User.findById(userId);
-    if(!user){
-      return res.status(200).json({
-        message:"Invalid User",
-        userValid:false
-      })
-    }
-    if(user.token !== token){
-      return res.status(200).json({
-        message:"Invalid User",
-        userValid:false
-      })
-    }
-    res.status(200).json({
-      message:"valid User",
-      userValid:true
-    })
-  }catch(error){
-    res.status(400).json({
-      message:"Invalid User",
-      userValid:false,
-    })
-    console.log(error);
-  }
-}
+module.exports = { signUpUser, userlogIn };
 
-module.exports = { signUpUser, userlogIn ,isUserValid};
